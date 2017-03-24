@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="Numpad_NumberStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center|bottom</item>
+    </style>
+
+    <style name="Numpad_StringStyle">
+        <item name="android:textColor">@color/monsoon</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center|top</item>
+    </style>
+
+    <style name="NumpadKeyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="image_button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="check_icon">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="search_view">
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlHighlight">@color/light_blue</item>
+        <item name="colorAccent">@color/blue_grey</item>
+    </style>
+</resources>

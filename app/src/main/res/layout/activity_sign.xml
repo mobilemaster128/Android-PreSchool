@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.check.preschool.SignActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/datetimebar_color"
+            android:padding="8dp">
+            <ImageButton
+                android:background="@drawable/teacher"
+                android:id="@+id/teacher"
+                style="@style/image_button"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/monsoon"/>
+
+            <ImageButton
+                android:background="@drawable/child"
+                android:id="@+id/child"
+                style="@style/image_button"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/datetimebar"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:layout_margin="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/time"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="bottom|center"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/date"
+                    android:layout_gravity="top|center"
+                    android:gravity="top|center"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:background="@drawable/login"
+                android:id="@+id/checkin"
+                style="@style/image_button"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/monsoon"/>
+
+            <ImageButton
+                android:background="@drawable/logout"
+                android:id="@+id/checkout"
+                style="@style/image_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_bar"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@color/searchbar_color">
+            <include
+                layout="@layout/search_widget"
+                style="@style/search_view" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:id="@+id/contentview" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/card_widget" />
+
+                <include
+                    layout="@layout/card_widget" />
+
+                <include
+                    layout="@layout/card_widget" />
+
+                <include
+                    layout="@layout/card_widget" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

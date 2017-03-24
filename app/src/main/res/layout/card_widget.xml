@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="20dp"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/people"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="Traccey L.Martin"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Teddler"
+                android:textColor="@color/blue_grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:orientation="horizontal"
+                android:id="@+id/checkin">
+                <ImageView
+                    android:background="@drawable/checkin"
+                    style="@style/check_icon"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="1"
+                    android:text="Checked in at 1:45 PM"
+                    android:textColor="@color/checkin_color"
+                    android:layout_gravity="top"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:id="@+id/checkininfo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:orientation="horizontal"
+                android:id="@+id/checkout">
+                <ImageView
+                    android:background="@drawable/checkout"
+                    style="@style/check_icon"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="1"
+                    android:text="Checked out at 2:45 PM"
+                    android:textColor="@color/checkout_color"
+                    android:id="@+id/checkoutinfo"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/signbutton"
+        android:layout_marginTop="8dp"
+        android:text="SIGN IN"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/signin_button"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.check.preschool.NumberPadButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/keypad_background"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/numpad_key_number"
+        style="@style/Numpad_NumberStyle" />
+
+    <TextView
+        android:id="@+id/numpad_key_letters"
+        style="@style/Numpad_StringStyle" />
+
+</com.check.preschool.NumberPadButton>
